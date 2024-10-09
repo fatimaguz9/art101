@@ -4,6 +4,9 @@
 .minor-section {
     padding: 30px;
     margin-bottom: 15px;
-    border: solid 1px #2141cf;
+    border: solid 5px #2141cf;
     background-color: #a83939;
   }
+p{
+  font-family: 'Times New Roman', Times, serif ;
+}
