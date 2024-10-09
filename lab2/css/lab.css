@@ -2,11 +2,21 @@
 
 /* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
 .minor-section {
-    padding: 30px;
-    margin-bottom: 15px;
+    padding: 10px;
+    margin-bottom: 10px;
     border: solid 5px #2141cf;
     background-color: #a83939;
+
   }
-p{
-  font-family: 'Times New Roman', Times, serif ;
-}
+
+  h1 {color:yellow;
+    letter-spacing: 3px;
+    word-spacing: 3px;
+    font-size: 300%
+  }
+
+  h1, h2, h3 {font-family: 'Times New Roman', Times, serif;}
+
+
+  
+  
