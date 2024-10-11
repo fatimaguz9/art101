@@ -1,6 +1,33 @@
 /* this css file will only style the homepage of our site */
 
-.cat-photo {
+body {
+  background-color: #402c21;
+}
+
+/* we can have rules apply to multiple elements at the same time with commas */
+h1,h2,h3 {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* and we can have rules that overlap other rules, both take effect */
+h1,h2,h3 {
+  letter-spacing: 5px;
+  word-spacing: 5px;
+  font-size: 200%;
+}
+
+/* the hashtag in a CSS selector selects an element by id, e.g., id="content" */
+#content {
   margin: 10px;
-  max-width: 500px;
+  padding: 10px;
+  border: solid 3px #af6975;
+  background-color: #8aaea8;
+}
+
+/* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
+.minor-section {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: solid 1px #af6975;
+  background-color: #8aaea8;
 }
