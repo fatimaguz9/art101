@@ -51,3 +51,8 @@ image {
   margin-bottom: 3px;
   border: solid 3px #402c21
 }
+
+h5 {
+  float: right;
+  left: 100px;
+}
