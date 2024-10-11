@@ -34,3 +34,11 @@ h1,h2,h3 {
   border: solid 1px #af6975;
   background-color: #8aaea8;
 }
+
+.minor-section {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: solid 3px #af6975;
+  background-color: #8aaea8;
+}
+
