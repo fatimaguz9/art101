@@ -43,7 +43,6 @@ h2 {
 .minor-section {
   padding: 10px;
   margin-bottom: 10px;
-  border: solid 1px #af6975;
   background-color: #8aaea8;
 }
 
@@ -53,6 +52,7 @@ image {
 }
 
 h5 {
+  
   float: right;
   left: 100px;
 }
