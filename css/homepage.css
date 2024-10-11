@@ -5,15 +5,30 @@ body {
 }
 
 /* we can have rules apply to multiple elements at the same time with commas */
-h1,h2,h3 {
+h1 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+h2 {
   font-family: 'Times New Roman', Times, serif;
+  font-weight: lighter;
 }
 
 /* and we can have rules that overlap other rules, both take effect */
-h1,h2,h3 {
+h1 {
   letter-spacing: 5px;
   word-spacing: 5px;
-  font-size: 200%;
+  font-size: 150%;
+}
+
+h2 {
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  font-size: 100%;
 }
 
 /* the hashtag in a CSS selector selects an element by id, e.g., id="content" */
@@ -30,4 +45,9 @@ h1,h2,h3 {
   margin-bottom: 10px;
   border: solid 1px #af6975;
   background-color: #8aaea8;
+}
+
+image {
+  margin-bottom: 3px;
+  border: solid 3px #402c21
 }
