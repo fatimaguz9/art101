@@ -7,7 +7,7 @@
 // Define Variables 
 make = "Kia";
 model= "Sorento";
-color= "white";
+color= "White";
 year= 2003;
 
 //calculate
