@@ -15,16 +15,15 @@ border: double 5px #af6975;
 float: right;
 }
 
-.name {
-  position: absolute;
-  top: 210px;
-  right: 80px;
-  width: 450px;
-  word-wrap: break-word;
-  font-size: 350%;
-  line-height: 90%;
-  font-weight: bold;
-  font-family: "Times New Roman", serif;
+.container {
+  position: relative;
   text-align: center;
-  margin: 20px;
+  color: rgb(0, 0, 0);
 }
+
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+    transform: translate(-50%, -50%);}
