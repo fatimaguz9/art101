@@ -12,7 +12,10 @@ function sortUserName() {
 
   var nameArray = userName.split('');
   console.log("nameArray =", nameArray);
-
+  var shuffledArray = shuffledArray(nameArray);
+  console.log("shuffledArray =", shuffledArray);
+  var shuffledString = shuffledArray.join("");
+  return newName;
   var nameArraySort = nameArray.sort();
   console.log("nameArraySort =", nameArraySort);
 
@@ -21,7 +24,12 @@ function sortUserName() {
 
   return nameSorted;
 }
+function main(){
+document.writeln("This is your name actually: " + sortedName + 
+  "</br></br>");
+  var randomName = randomizeName(userName);
+  document.writeln("This is your new  name.");
+  document.writeln("<div class= 'name'>" + randomName + "</div>")
 
-document.writeln("This is your name actually: ",
-sortUserName(), "</br>");
-
+}
+main();
