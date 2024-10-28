@@ -13,7 +13,6 @@ function sortUserName() {
   var nameArray = userName.split('');
   console.log("nameArray =", nameArray);
 
-  return newName;
   var nameArraySort = nameArray.sort();
   console.log("nameArraySort =", nameArraySort);
 
@@ -23,7 +22,7 @@ function sortUserName() {
   return nameSorted;
 }
 function main(){
-document.writeln("This is your name actually: " + sortedName + 
+document.writeln("This is your name actually: " + nameSorted + 
   "</br></br>");
   document.writeln("This is your new  name.");
   document.writeln("<div class= 'name'>" + randomName + "</div>")
