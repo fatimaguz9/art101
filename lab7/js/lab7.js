@@ -22,6 +22,6 @@ function sortUserName() {
   return nameSorted;
 }
 
-document.writeln("This is your name actually:")
-sortUsername(), ("</br>");
+document.writeln("This is your name actually:",
+sortUsername(), "</br>");
 
