@@ -2,28 +2,24 @@
 // Author: Fatima Guzman
 // Date: 10.28.24
 
-// Constants
+
+console.log("Main function started."); 
 
 // Functions
 
 function sortUserName() {
   var userName =  window.prompt("Hi. What is your name?");
   console.log("userName =", userName);
-
+  //string to array
   var nameArray = userName.split('');
-  console.log("nameArray =", nameArray);
-
+  console.log("nameArray=", nameArray);
   var nameArraySort = nameArray.sort();
-  console.log("nameArraySort =", nameArraySort);
-
   var nameSorted =nameArraySort.join('');
   console.log("nameSorted =", nameSorted);
-
   return nameSorted;
 }
 
 //output
-document.writeln("This is your name actually: ", 
-  sortUserName(), "</br>");
+document.writeln(sortUserName(), "</br>");
 
 
