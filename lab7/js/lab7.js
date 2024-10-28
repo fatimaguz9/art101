@@ -6,11 +6,11 @@
 
 // Functions
 
-function lab7function() {
-  var username = window.prompt("Hi. What is your name?");
-  console.log("username=", username);
+function sortUserName() {
+  var userName = window.prompt("Hi. What is your name?");
+  console.log("userName=", userName);
 
-  var nameArray = username.split('');
+  var nameArray = userName.split('');
   console.log("nameArray =", nameArray);
 
   var nameArraySort = nameArray.sort();
