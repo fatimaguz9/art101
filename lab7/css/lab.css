@@ -9,3 +9,8 @@
   background-color: #a2b1ae;
   border-style: double solid 3px #af6975;
 }
+
+img {
+border: double 5px #af6975;
+float: right;
+}
