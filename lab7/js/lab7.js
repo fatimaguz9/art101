@@ -8,7 +8,7 @@
 
 function sortUserName() {
   var userName =  window.prompt("Hi. What is your name?");
-  console.log("userName=", userName);
+  console.log("userName =", userName);
 
   var nameArray = userName.split('');
   console.log("nameArray =", nameArray);
