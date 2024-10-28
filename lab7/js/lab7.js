@@ -21,10 +21,9 @@ function sortUserName() {
 
   return nameSorted;
 }
-function main(){
-  var sortedName =sortUserName();
-document.writeln("This is your name actually: " + sortedName + 
-  "</br></br>");
-  document.writeln("This is your new  name.");
-}
+
+//output
+document.writeln("This is your name actually: ", 
+  sortUserName(), "</br>");
+
 
