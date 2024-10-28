@@ -22,10 +22,9 @@ function sortUserName() {
   return nameSorted;
 }
 function main(){
-document.writeln("This is your name actually: " + nameSorted + 
+  var sortedName =sortUserName();
+document.writeln("This is your name actually: " + sortedName + 
   "</br></br>");
   document.writeln("This is your new  name.");
-  document.writeln("<div class= 'name'>" + randomName + "</div>")
-
 }
-main();
+
