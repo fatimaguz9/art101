@@ -26,10 +26,10 @@ float: right;
   left: 50%;
     transform: translate(-50%, -50%);}
 
-    .name {
-      position: absolute;
-      font-weight: bold;
-      font-family: "Times New Roman", serif;
-      text-align: center;
-      margin: 20px;
-    }
+.name {
+  position: absolute;
+  font-weight: bold;
+  font-family: "Times New Roman", serif;
+  text-align: center;
+  margin: 20px;
+}
