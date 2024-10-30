@@ -1,9 +1,6 @@
 // index.js - Lab 8 Anon Functions and Callbacks 
 // Author: Fatima
 // Date: 10.31.24
-
-// Constants
-
 // Functions
 
 function thisLabfunction(x) {
@@ -28,10 +25,7 @@ var result = array.map(function(x){
 
 console.log("subtract 21 from array:", result);
 
+$('#output').html('Original Array: [60, 58, 29, 92, 1, 76]<br>Array With Function: [65, 63, 34, 97, 6, 81]<br>Array (-21) : [39 ,37 ,8 ,71 ,-20 ,55]');
 
-// Your map results data
-var mapResults = "Your map results here";
 
-// Use jQuery to select the element by its ID and set the HTML content
-$("#output").html(mapResults);
 
