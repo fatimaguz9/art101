@@ -13,12 +13,16 @@ $("button-challenge").click(function(){
   $("#challenge").toggleClass("special");
 });
 
+
 // Functions
 
-function main() {
-  console.log("Main function started.");
-  // the code that makes everything happen
+function handleClick(){
+  console.log("Button was clicked");
 }
+  var mybutton = document.getElementById("myButton");
+  myButton.addEventListender("click", function(){
+    console.log("YIPPIE!");
+  });
 
 // let's get this party started
 main();
