@@ -11,13 +11,13 @@ $("#problem").append("<button id='button-problem'>Make Special</button");
 $("#results").append("<button id='button-results'>Make Special</button"); 
 
 //add a click listener to the challenge button
-$("button-challenge").click(function(){
-  $("#challenge").toggleClass("special");
+$("#button-challenge").click(function(){
+$("#challenge").toggleClass("special");
 });
-$("button-challenge").click(function(){
+$("#button-challenge").click(function(){
   $("#Problem").toggleClass("special");
 });
-$("button-challenge").click(function(){
+$("#button-challenge").click(function(){
   $("#results").toggleClass("special");
 });
 
@@ -30,5 +30,3 @@ function handleClick(){
 document.getElementById('myButton').addEventListender('click', handleClick);
     console.log('YIPPIE!');
 
-// let's get this party started
-main();
