@@ -7,10 +7,18 @@ Date: 11.1.2024
 
 //add button to challenge section
 $("#challenge").append("<button id='button-challenge'>Make Special</button"); 
+$("#problem").append("<button id='button-problem'>Make Special</button"); 
+$("#results").append("<button id='button-results'>Make Special</button"); 
 
 //add a click listener to the challenge button
 $("button-challenge").click(function(){
   $("#challenge").toggleClass("special");
+});
+$("button-challenge").click(function(){
+  $("#Problem").toggleClass("special");
+});
+$("button-challenge").click(function(){
+  $("#results").toggleClass("special");
 });
 
 
@@ -19,9 +27,8 @@ $("button-challenge").click(function(){
 function handleClick(){
   console.log("Button was clicked");
 }
-  var mybutton = document.getElementById("myButton");
-  myButton.addEventListender("click", function(){
-    console.log("YIPPIE!");
+document.getElementById('myButton').addEventListender('click', function(){
+    console.log('YIPPIE!');
   });
 
 // let's get this party started
