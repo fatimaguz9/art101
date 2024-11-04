@@ -2,7 +2,7 @@
 lab.js - This simple JavaScript/jQuery script uses buttons to modify some elements on the page
  Requirements: jQuerry must be loaded for this script to work.
 Author: Fatima Guzman
-Date: 11.1.2024
+Date: 11.4.2024
 */
 
 //add button to challenge section
@@ -25,7 +25,7 @@ $("#button-challenge").click(function(){
 // Functions
 
 function handleClick(){
-  console.log("Button was clicked");
+  console.log("Thank you for clicking the button");
 }
 document.getElementById('myButton').addEventListener('click', handleClick);
 
