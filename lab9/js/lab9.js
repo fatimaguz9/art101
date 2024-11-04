@@ -27,6 +27,6 @@ $("#button-challenge").click(function(){
 function handleClick(){
   console.log("Button was clicked");
 }
-document.getElementById('myButton').addEventListender('click', handleClick);
+document.getElementById('myButton').addEventListener('click', handleClick);
     console.log('YIPPIE!');
 
