@@ -1,6 +1,9 @@
-// index.js - purpose and description here
-// Author: Your Name
-// Date:
+/* 
+lab.js - This simple JavaScript/jQuery script uses buttons to modify some elements on the page
+ Requirements:
+Author: Fatima Guzman
+Date: 11.7.2024
+*/
 
 // Constants
 
