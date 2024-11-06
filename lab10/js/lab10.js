@@ -27,9 +27,8 @@ $("#button").click(function(){
 
 function handleClick() {
 const newText = generateRandomText();
-document.getElementById('output').innerHTML = '<div class= "text"><p>' + newText + '</p></div>';
+$("#output").append('<div class="text"><p>' + newText + '</p></div>');
 }
 
-$("#output").append('<div class="text"><p>' + newText + '</p></div>');
 
 
