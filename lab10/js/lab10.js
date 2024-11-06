@@ -27,6 +27,6 @@ $("#button").click(function(){
 
 const newText = generateRandomText();
 
-$("#output").append('<div class="text"><p>' + newText + '</p></div>');
+$("#output").append('<div class="Hello welcome to the site. Here is a button :)"><p>' + newText + '</p></div>');
 
 document.getElementById('myButton').addEventListener('click', handleClick);
