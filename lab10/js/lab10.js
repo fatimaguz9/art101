@@ -10,7 +10,7 @@ Date: 11.7.2024
 // Functions
 
 function generateRandomText() {
-  const text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
+  const text = "Hello welcome to the site. Here is a button :)";
   const min = 3;
   const max = 100;
   const randLen = Math.floor(Math.random() * (max - min + 1)) + min;
@@ -21,11 +21,12 @@ function generateRandomText() {
 }
 
 // click listener for button
-$("#buttin").click(function(){
+$("#button").click(function(){
   $("#results").toggleClass("special");
 });
 
 const newText = generateRandomText();
+
 $("#output").append('<div class="text"><p>' + newText + '</p></div>');
 
 document.getElementById('myButton').addEventListener('click', handleClick);
