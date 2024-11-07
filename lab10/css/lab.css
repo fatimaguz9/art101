@@ -23,7 +23,7 @@
   display: inline-block;
   position: relative;
   max-width: 60%;
-  margin-right: auto;
+  text-align: right;
   padding: 5px 10px;
   border-radius: 15px;
   background-color: rgb(75, 210, 206);
