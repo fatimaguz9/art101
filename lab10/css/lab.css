@@ -14,8 +14,20 @@
   margin: 3px;
   padding: 5px 10px;
   border-radius: 15px;
-  background-color: aquamarine;
-  color: rgb(18, 48, 54);
+  background-color: rgb(138, 127, 255);
+  font-family: sans-serif;
+  font-size: 0.8em;
+}
+
+.userText p {
+  display: inline-block;
+  position: relative;
+  max-width: 60%;
+  margin-right: auto;
+  padding: 5px 10px;
+  border-radius: 15px;
+  background-color: rgb(75, 210, 206);
+  color: black;
   font-family: sans-serif;
   font-size: 0.8em;
 }

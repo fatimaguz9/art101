@@ -1,5 +1,5 @@
 /* 
-lab.js - This simple JavaScript/jQuery script uses buttons to modify some elements on the page
+  lab.js - This simple JavaScript/jQuery script uses buttons to modify some elements on the page
  Requirements:
 Author: Fatima Guzman
 Date: 11.7.2024
@@ -21,10 +21,15 @@ function generateRandomText() {
 }
 
 // click listener for button
-$("#make-convo").click(function(){ 
-const newText = generateRandomText();
-$("#output").append('<div class="text"><p>' + newText + '</p></div>');
+$("#make-convo").click(function(){
+//get new fake dialogue
+    const newText = generateRandomText();
+// append a new div to our output div
+    $("#output").append('<div class="text"><p>' + newText + '</p></div>');
 });
 
+$("#enterButton").click(function(){
 
-
+  var input = $("#userInput").val();
+  $("#output").append('<div class="userText"><p>' + input + '</p></div>');
+});
