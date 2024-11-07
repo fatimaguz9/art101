@@ -21,12 +21,10 @@ function generateRandomText() {
 }
 
 // click listener for button
-$("#make-convo").click(function(){
-});
-
+$("#make-convo").click(function(){ 
 const newText = generateRandomText();
-
 $("#output").append('<div class="text"><p>' + newText + '</p></div>');
+});
 
 
 
