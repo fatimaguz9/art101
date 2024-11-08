@@ -1,6 +1,6 @@
 /* 
-  lab.js - This simple JavaScript/jQuery script uses buttons to modify some elements on the page
- Requirements:
+  lab.js - javascript for the web
+ Requirements: Creating buttons and a functioning text box. With bonus task. 
 Author: Fatima Guzman
 Date: 11.7.2024
 */
