@@ -17,23 +17,40 @@
 			<h1>Lab 11- JavaScript Events and Forms</h1>
 			<div class="minor-section">
 					<h2>Challenge</h2>
-					<p></p>
+					<p>The challenge of the lab was to experiment with JS events. For the bonus task
+						I attempted the glitch button with the timeout. I did try to do the anagram function
+						but was having trouble with it.  
+					</p>
 			</div>
 			<div class="minor-section">
 					<h2>Problems</h2>
-					<p> </p>
+					<p>I was having so many problems with trying to get the anagram to work. I woukd try different
+						methods through W3schools, WesBot, and other sources, but it didn't seem to work for me. 
+						It was mainly errors through the console and I wouln't know how to solve the issue. So I did the 
+						glitch effect which I was sucessfuly able to do. Some erros with the effects shaking my screen, but
+						I was able to figure out that it should be in the same bracket if I want the effect to only work
+						when the button is pressed. 
+					</p>
 			</div>
-			<div class="minor-section">
+	
 					<h2>Results</h2>
-					<p>The site should be working and the buttons should be working properly.</p>
-					<div id="output"></div>
-					<input type="text" id="user-name" placeholder="Fatima">
-					<button id="submit">Submit</button>
-					<nav id="link">
-						<url><li><a href="js/lab11.js">JavaScript</a></li></url>
-					</nav>
-			</div>
-		</section>
+					<p>The site should be working and the buttons should be working properly. Press the dance button.</p>
+					<div id="output">
+						<input type="text" id="user-name" placeholder="Write Text">
+						<button id="submit">Submit</button>
+						<button onclick="glitch()">Dance Button</button>
+					</div>	
+					<script>
+						function glitch() {
+						  var body = document.body;
+						  var angle = (Math.random() - 0.5) * 5; 
+						  var translateX = (Math.random() - .4) * window.innerWidth /10; 
+						var translateY = (Math.random() - .3) * window.innerHeight /10;
+						body.style.transform = `rotate(${angle}deg) translate(${translateX}px, ${translateY}px)`;
+						setTimeout(function () {
+							body.style.transform = '';
+						}, Math.random()*50);}
+						</script>	
 		<h2>Homepage</h2>
 		<nav id="links">
 			 <ul>
