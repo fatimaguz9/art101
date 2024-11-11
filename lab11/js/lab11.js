@@ -4,7 +4,7 @@
    Requirements: jQuery must be loaded for this script to work.
 
    Author: Fatima Guzman
-   Date: 11.7.2024
+   Date: 11.10.2024
 */
 
 
