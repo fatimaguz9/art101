@@ -1,10 +1,7 @@
 /*
-   lab.js - Lab 11- JavaScript Events and Forms
-
-   Requirements: jQuery must be loaded for this script to work.
-
+   lab.js - Lab 12- Conditionals
    Author: Fatima Guzman
-   Date: 11.10.2024
+   Date: 11.14.2024
 */
 
 function sortingHat(str) {
