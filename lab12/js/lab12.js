@@ -7,3 +7,10 @@
    Date: 11.10.2024
 */
 
+function sortingHat(str) {
+  len = str.length; 
+  mod = len % 4; 
+  if (mod == 0) {
+    return 
+  }
+}
