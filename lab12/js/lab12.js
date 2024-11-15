@@ -14,13 +14,18 @@ var mod = len % 4;
       image: "lannister.jpg" };
   }
   else if (mod == 1) { 
-    return { house: "House Targaryen", description: " Fire and Blood. House Targaryen is one of the former Great Houses of Westeros and known for thier dragons/fiery blood.",image:"targaryen.jpg" };
+    return { house: "House Targaryen", 
+      description: " Fire and Blood. House Targaryen is one of the former Great Houses of Westeros and known for thier dragons/fiery blood.",
+      image:"targaryen.jpg" };
   }
   else if (mod == 2) {
-    return { house: "House Stark", description: " WINTER IS COMING. House Stark is the noble house ruling The North. They trace their lineage back to the First Men.", image:"stark.jpg"};
+    return { house: "House Stark", 
+      description: " WINTER IS COMING. House Stark is the noble house ruling The North. They trace their lineage back to the First Men.", image:"stark.jpg"};
   }
   else if (mod == 3) {
-    return { house: "House Baratheon", description: " Ours is the Fury. House Baratheon is one of the Great Houses of Westeros, although also one of the youngest. It is the current royal house.", image: "baratheon.jpg"};
+    return { house: "House Baratheon", 
+      description: " Ours is the Fury. House Baratheon is one of the Great Houses of Westeros, although also one of the youngest. It is the current royal house.", 
+      image: "baratheon.jpg"};
   }
 }
 
