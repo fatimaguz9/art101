@@ -7,3 +7,46 @@
   border: solid 5px #4b3b06;
   background-color: #7adfae;
 }
+
+.img {
+  width: 100%;
+  height: auto;
+  ;
+}
+
+.output-box {
+  position: relative;
+}
+
+#baratheon {
+  position: absolute;
+  top: 150px;
+  right: 252px;
+  width: 100px;
+  transform: scaleX(-1);;
+}
+#lannister {
+  position: absolute;
+  top: 150px;
+  right: 252px;
+  width: 100px;
+  transform: scaleX(-1);;
+}
+#stark {
+  position: absolute;
+  top: 150px;
+  right: 252px;
+  width: 100px;
+  transform: scaleX(-1);;
+}
+#targaryen {
+  position: absolute;
+  top: 150px;
+  right: 252px;
+  width: 100px;
+  transform: scaleX(-1);;
+}
+
+.hidden {
+  visibility: hidden;
+}
