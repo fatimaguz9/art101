@@ -1,21 +1,39 @@
-// index.js - purpose and description here
-// Author: Your Name
-// Date:
+/*
+   lab.js - Lab 13- Loops
+   Author: Fatima Guzman
+   Date: 11.18.2024
+*/
 
 // Constants
 
 // Functions
 
 // this is an example function and this comment tells what it doees and what parameters are passed to it.
-function myFunction(param1, param2) {
-  // some code here
-  // return results;
+function fizzBuzzBoom(maxNums, factorObj) {
+  for (var num=0; num<maxNums; num++) {
+    var outputStr = "";
+    for (var factor in factorObj) {
+      if (num % factor ==0) {
+        outputStr += factorObj[factor];
+      }
+    }
+    if (outputStr) {
+      outputStr = " - " + outputStr + "!";
+    }
+    outputToPage(num.toString() + outputStr)
+  }
 }
 
-function main() {
-  console.log("Main function started.");
-  // the code that makes everything happen
-}
+  function reportError(str) {
+    outputEl.innerHTML = "<div class='error'>" + str + "</div>";
+  }
 
-// let's get this party started
-main();
+  document.getElementById("submit").addEventListener("click", function() {
+    var max = document.getElementById("max").value;
+    console.log("max:", max)
+    if (! max) {
+      reportError("You must provide a maximum");
+    }
+  })
+
+  // fix this is pure JS
