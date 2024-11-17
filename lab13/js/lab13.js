@@ -15,9 +15,9 @@ for (i = 1; i <= 200; i++) {
    else if (i % 5 == 0) str += 'Buzz';
    else if (i % 7 == 0) str += 'Boom';
 
-   output += '${i} ${str}<br>';
+   oneLongString += num + "Fizz!<br>";
 }
-$("#output").html(output);
+$("#output").html(oneLongString);
 }
 
 fizzBuzz();
