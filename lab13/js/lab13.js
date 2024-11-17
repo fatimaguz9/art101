@@ -7,33 +7,17 @@
 // Constants
 
 // Functions
+function fizzBuzz() {
+  let output = '';
+for (i = 1; i <= 200; i++) {
+  let str = '';
+  if (i % 3 == 0) str += 'Fizz';
+   else if (i % 5 == 0) str += 'Buzz';
+   else if (i % 7 == 0) str += 'Boom';
 
-// this is an example function and this comment tells what it doees and what parameters are passed to it.
-function fizzBuzzBoom(maxNums, factorObj) {
-  for (var num=0; num<maxNums; num++) {
-    var outputStr = "";
-    for (var factor in factorObj) {
-      if (num % factor ==0) {
-        outputStr += factorObj[factor];
-      }
-    }
-    if (outputStr) {
-      outputStr = " - " + outputStr + "!";
-    }
-    outputToPage(num.toString() + outputStr)
-  }
+   output += '${i} ${str}<br>';
+}
+$("#output").html(output);
 }
 
-  function reportError(str) {
-    outputEl.innerHTML = "<div class='error'>" + str + "</div>";
-  }
-
-  document.getElementById("submit").addEventListener("click", function() {
-    var max = document.getElementById("max").value;
-    console.log("max:", max)
-    if (! max) {
-      reportError("You must provide a maximum");
-    }
-  })
-
-  // fix this is pure JS
+fizzBuzz();

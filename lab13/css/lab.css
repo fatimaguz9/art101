@@ -7,3 +7,22 @@
   border: solid 5px #4b3b06;
   background-color: #7adfae;
 }
+
+input[type="number"] {
+  width: 40px;
+}
+input[type="text"] {
+  width: 100px;
+}
+
+input#max {
+  width: 60px;
+}
+
+table {
+  padding: 20px;
+}
+
+input, button {
+  font-size: 90%;
+}
