@@ -16,7 +16,6 @@ function fizzBuzz() {
     if (i % 3 == 0) str += 'Fizz';
     if (i % 5 == 0) str += 'Buzz';
     if (i % 4 == 0) str += 'Boom';
-    if (i % 7 == 0) str += 'Bang';
 
     oneLongString += i + ((str !== '') ? " " + str : "") + "<br>";
  }
