@@ -36,4 +36,3 @@ function fizzBuzzBoom(maxNums, factorObj) {
     }
   })
 
-  // fix this is pure JS
