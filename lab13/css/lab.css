@@ -26,3 +26,9 @@ table {
 input, button {
   font-size: 90%;
 }
+
+#output.cols {
+  -webkit-column-width: 200px; /* Chrome, Safari, Opera */
+  -moz-column-width: 200px; /* Firefox */
+  column-width: 200px;
+}

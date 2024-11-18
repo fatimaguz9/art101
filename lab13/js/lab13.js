@@ -4,22 +4,28 @@
    Date: 11.18.2024
 */
 
-// Constants
 
-// Functions
+$(document).ready(function() {
+  function fizzBuzz() {
+    let oneLongString = '';
+    for (let i = 1; i <= 200; i++) {
+      if (i % 3 == 0) {
+        console.log("fizz");
+        oneLongString += "Fizz\n"; 
+      } else if (i % 5 == 0) {
+        console.log("buzz");
+        oneLongString += "Buzz\n"; 
+     } else if (i % 7 == 0) { 
+       console.log("boom");
+       oneLongString += "Boom\n"; 
+     } else {     
+       console.log(i);
+       oneLongString += i + "\n"; 
+     }
+   }
 
-
-function fizzBuzz() {
-  let oneLongString = '';
-  for (let i = 1; i <= 200; i++) {
-    let str = '';
-    if (i % 3 == 0) str += 'Fizz';
-    if (i % 5 == 0) str += 'Buzz';
-    if (i % 4 == 0) str += 'Boom';
-
-    oneLongString += i + ((str !== '') ? " " + str : "") + "<br>";
- }
+   $("#output").append("<pre><p>" + oneLongString + "</p></pre>"); 
 }
 
 document.getElementById("submit").addEventListener("click", fizzBuzz);
-
+})
