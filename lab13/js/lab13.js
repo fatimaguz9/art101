@@ -7,6 +7,8 @@
 // Constants
 
 // Functions
+
+
 function fizzBuzz() {
   let oneLongString = '';
   for (let i = 1; i <= 200; i++) {
