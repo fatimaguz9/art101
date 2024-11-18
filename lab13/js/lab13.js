@@ -8,14 +8,17 @@
 
 // Functions
 function fizzBuzz() {
-  let output = '';
+  let oneLongString = '';
   for (let i = 1; i <= 200; i++) {
     let str = '';
     if (i % 3 == 0) str += 'Fizz';
     if (i % 5 == 0) str += 'Buzz';
-    if (i % 7 == 0) str += 'Boom';
+    if (i % 4 == 0) str += 'Boom';
+    if (i % 7 == 0) str += 'Bang';
 
-    // Add number or some string
     oneLongString += i + ((str !== '') ? " " + str : "") + "<br>";
  }
 }
+
+document.getElementById("submit").addEventListener("click", fizzBuzz);
+
