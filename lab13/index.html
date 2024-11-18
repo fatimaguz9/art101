@@ -7,7 +7,8 @@
 <head>
 	<link rel="stylesheet" type="text/css" href="../css/site.css">
 	<link rel="stylesheet" type="text/css" href="./css/lab.css">
-	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+	<script
+	 src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 	<script src="js/lab13.js" DEFER></script>
 
 </head>
@@ -27,53 +28,37 @@
 			<div class="minor-section">
 					<h2>Results</h2>
 					<p> Hopefully you can see the site working and the function works. </p>
-					<div id="input">
-						"What should be the biggest number?"
-						<input type="number" min="1" max="200" id="max">
-						<br> somehin <br>
-						<table>
-							<tr>
-								<td>
-									<input type="number" min="0" max="200" id="num1">
-								</td>
-							<tr>
-								<td>
-									<input type="text" id="text1">
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<input type="number" min="0" max="200" id="num2">
-								</td>
-							<tr>
-								<td>
-									<input type="text" id="text2">
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<input type="number" min="0" max="200" id="num3">
-								</td>
-							<tr>
-								<td>
-									<input type="text" id="text3">
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<input type="number" min="0" max="200" id="num4">
-								</td>
-							<tr>
-								<td>
-									<input type="text" id="text4">
-								</td>
-							</tr>
-						</table>
-
-
-					</div>
-					<div id="output"></div>
+					<div id="input"></div>
+					"The most you would like to go?"
+			<input type="number" min="1" max="200" id="max">
+			<br>Write Numbers & FizzBuzzBoom<br>
+			<table>
+				<tr>
+					<th>Factor</th>
+					<th>Prints what?</th>
+				</tr>
+				<tr>
+					<td><input type="number" min=1 max="200" id="num1"></td>
+					<td><input type="text" id="text1"></td>
+				</tr>
+				<tr>
+					<td><input type="number" min=1 max="200" id="num2"></td>
+					<td><input type="text" id="text2"></td>
+				</tr>
+				<tr>
+					<td><input type="number" min=1 max="200" id="num3"></td>
+					<td><input type="text" id="text3"></td>
+				</tr>
+				<tr>
+					<td><input type="number" min=1 max="200" id="num4"></td>
+					<td><input type="text" id="text4"></td>
+				</tr>
+			</table>
+			<button id="submit">Lets Go</button>
 			</div>
+			<div>
+				<h3>Output</h3>
+				<div id="output"></div>
 		</section>
 		<h2>Homepage</h2>
 		<nav id="links">
