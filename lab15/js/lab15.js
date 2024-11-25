@@ -1,7 +1,7 @@
 /*
    lab.js - Lab 15- AJAX
    Author: Fatima Guzman
-   Date: 11.24.2024
+   Date: 11.25.2024
 */
 //API info
 document.getElementById('fetchDataBtn').addEventListener('click', function() {
