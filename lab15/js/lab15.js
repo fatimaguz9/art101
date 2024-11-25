@@ -3,6 +3,7 @@
    Author: Fatima Guzman
    Date: 11.24.2024
 */
+//API info
 document.getElementById('fetchDataBtn').addEventListener('click', function() {
 $.ajax({
   method: "GET", 
@@ -15,7 +16,7 @@ $.ajax({
     var evChain = data.chain;
     var pokemonNames = [];
     
-    // Traverse and collect Pokémon names from each stage of the evolution chain
+    // Rattata stage of evolution chain
     while (evChain) {
       console.log(evChain.species.name);
       pokemonNames.push(evChain.species.name); 
@@ -23,7 +24,7 @@ $.ajax({
     }
      document.getElementById("output").textContent = "Evolution Chain: " + pokemonNames.join(", ") + "\n";
   },
-
+//error if it doesn't work
   error: function (jqXHR, textStatus, errorThrown) {
     console.error("AJAX Error:", textStatus, errorThrown); 
      }
