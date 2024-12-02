@@ -4,7 +4,7 @@
 
 // change the type of jquery if it doesn't work 
 
-let endpoint = "https://xkcd.com/info.0.json";
+let endpoint = "https://api.allorigins.win/raw?url=https://xkcd.com/info.0.json";
 
 // Configure the AJAX request
 let ajaxConfig = {
