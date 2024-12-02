@@ -11,8 +11,9 @@ let ajaxConfig = {
   url: endpoint, // API URL
   method: "GET", // HTTP method
   success: function(response) { // Success handler
-    console.log(response); 
-  }, 
+    console.log(response);
+    $('#output').html('<pre>' + JSON.stringify(response, null, 2) + '</pre>');
+  },
   error: function(xhr, status, error) {
     console.error(error);
   } 
