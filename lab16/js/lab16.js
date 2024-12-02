@@ -6,14 +6,16 @@
 // change the type of jquery if it doesn't work 
 
 let endpoint = "https://api.allorigins.win/raw?url=https://xkcd.com/info.0.json";
+let comicObj;
 
 // Configure the AJAX request
 let ajaxConfig = {
   url: endpoint, // API URL
   method: "GET", // HTTP method
   success: function(response) { // Success handler
-    console.log(response);
-    $('#output').html('<pre>' + JSON.stringify(response, null, 2) + '</pre>');
+    $("#output").append("<h2>" + comicObj.title);
+    $("#output").append("<p>" + comicObj.img);
+    $("#output").append("<h2>" + comicObj.alt);
     $("#output").append(`<img src='${response.img}'/>`);
   },
   error: function(xhr, status, error) { // Error handler
