@@ -13,8 +13,8 @@ let ajaxConfig = {
   success: function(response) { // Success handler
     console.log(response); 
   }, 
-  error: function(xhr, status, error) { // Error handler
-    console.error(error); 
+  error: function(xhr, status, error) {
+    console.error(error);
   } 
 };
 
