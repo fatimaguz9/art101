@@ -13,6 +13,7 @@ let ajaxConfig = {
   success: function(response) { // Success handler
     console.log(response);
     $('#output').html('<pre>' + JSON.stringify(response, null, 2) + '</pre>');
+    $("#output").append(`<img src='$data.url}'/>`);
   },
   error: function(xhr, status, error) {
     console.error(error);
