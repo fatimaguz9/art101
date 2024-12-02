@@ -4,21 +4,23 @@
 
 // change the type of jquery if it doesn't work 
 
-let endpoint = "https://imgs.xkcd.com/comics/second_stage.png";
+$.ajax({
+  
+  url: "https://imgs.xkcd.com/comics/advent_calendar_advent_calendar.png",
+  data: { 
+          // here is where any data required by the api 
+          //   goes (check the api docs)
+          id: 123,
+          api_key: "blahblahblah",
+        },
+  // Whether this is a POST or GET request
+  type: "GET",
+  dataType : "json",
+  success: function(data) {
+      console.log(data);
+  },
 
-let ajaxConfrig = {
-  url: endpoint,
-  method: "GET", 
-  dataType: "json", 
-  data: {
-    count: 1, 
-  }, 
-success: function(data) {
-  $("#output").append("<h2>" + data.title);
-  $("#output").append("<p>" + data.explanation);
-  $("#output").append(`<img src='${data.url}' />`);
-},
-error: function(xhr, status, error) {
-  console.error(error);
-}
-};
+  error: function (jqXHR, textStatus, errorThrown) { 
+      console.log("Error:", textStatus, errorThrown);
+  }
+})
