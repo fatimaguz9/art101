@@ -4,20 +4,19 @@
 
 // change the type of jquery if it doesn't work 
 
-$.ajax({
-  
-  url: "https://xkcd.com/info.0.json",
-  data: { 
-    
-        },
-  // Whether this is a POST or GET request
-  type: "GET",
-  dataType : "json",
-  success: function(data) {
-      console.log(data);
-  },
+let endpoint = "https://xkcd.com/info.0.json";
 
-  error: function (jqXHR, textStatus, errorThrown) { 
-      console.log("Error:", textStatus, errorThrown);
-  }
-})
+// Configure the AJAX request
+let ajaxConfig = {
+  url: endpoint, // API URL
+  method: "GET", // HTTP method
+  success: function(response) { // Success handler
+    console.log(response); 
+  }, 
+  error: function(xhr, status, error) { // Error handler
+    console.error(error); 
+  } 
+};
+
+// Send the AJAX request
+$.ajax(ajaxConfig);
