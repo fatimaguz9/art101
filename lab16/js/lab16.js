@@ -16,6 +16,8 @@ let ajaxConfig = {
     console.log(response);
     comicObj = response;
    $("#output").append("<h2>" + comicObj.title);
+   $("#output").append("<p>Day: " + comicObj.day);
+   $("#output").append("<p>Transript: " + comicObj.alt);
    $("#output").append(`<img src='${comicObj.img}' alt='${comicObj.alt}'/>`);
 },
   error: function(xhr, status, error) { // Error handler
