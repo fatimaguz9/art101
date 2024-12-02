@@ -1,7 +1,8 @@
-// index.js - purpose and description here
-// Author: Your Name
-// Date:
-
+/*
+   lab.js - Lab 16- JSON and APIs
+   Author: Fatima Guzman
+   Date: 12.2.2024
+*/
 // change the type of jquery if it doesn't work 
 
 let endpoint = "https://api.allorigins.win/raw?url=https://xkcd.com/info.0.json";
@@ -13,11 +14,11 @@ let ajaxConfig = {
   success: function(response) { // Success handler
     console.log(response);
     $('#output').html('<pre>' + JSON.stringify(response, null, 2) + '</pre>');
-    $("#output").append(`<img src='$data.url}'/>`);
+    $("#output").append(`<img src='${response.data.url}'/>`);
   },
-  error: function(xhr, status, error) {
+  error: function(xhr, status, error) { // Error handler
     console.error(error);
-  } 
+  }
 };
 
 // Send the AJAX request
