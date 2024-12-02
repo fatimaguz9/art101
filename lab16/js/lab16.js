@@ -13,11 +13,11 @@ let ajaxConfig = {
   url: endpoint, // API URL
   method: "GET", // HTTP method
   success: function(response) { // Success handler
-    $("#output").append("<h2>" + comicObj.title);
-    $("#output").append("<p>" + comicObj.img);
-    $("#output").append("<h2>" + comicObj.alt);
-    $("#output").append(`<img src='${response.img}'/>`);
-  },
+    console.log(response);
+    comicObj = response;
+   $("#output").append("<h2>" + comicObj.title);
+   $("#output").append(`<img src='${comicObj.img}' alt='${comicObj.alt}'/>`);
+},
   error: function(xhr, status, error) { // Error handler
     console.error(error);
   }
